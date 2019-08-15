@@ -1,0 +1,428 @@
+.tranparent_black {
+  background-color: black !important;
+  opacity: 0.8 !important;
+  color: $w !important;
+  border: none;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: $r;
+  @include max(425px) {
+    height: 7px;
+    width: 7px;
+  }
+}
+.underline {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0px;
+    /* right: 0; */
+    width: 21px;
+    background: $b;
+  }
+  @include max(767px) {
+    left: 0;
+  }
+}
+.card_main {
+  color: $lg;
+  width: 100%;
+}
+.nav_link {
+  display: flex;
+}
+body {
+  font-family: poppins;
+  background-color: $w;
+}
+.center {
+  text-align: center;
+}
+
+// home section
+.hero,
+.queries {
+  background: url(../imgs/Video_static_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  p {
+    color: $fw;
+    font-family: $pt;
+  }
+
+  h1 {
+    color: $fw;
+    font-family: $pt;
+    @include max(320px) {
+      font-size: 22px;
+    }
+  }
+  h2 {
+    color: $fw;
+    font-family: $psb;
+    font-size: 19px;
+    @include max(991px) {
+      font-size: 16px;
+    }
+
+    @include max(767px) {
+      font-size: 12px;
+    }
+    @include max(425px) {
+      font-size: 14px;
+    }
+    @include max(375px) {
+      font-size: 10px;
+    }
+  }
+
+  h4 {
+    color: $fw;
+    font-family: $pb;
+    @include max(575px) {
+      font-size: 9px;
+    }
+  }
+  a {
+    color: $fw;
+    font-family: $pt;
+    padding: 0;
+    font-size: 12px;
+  }
+  .nav_box {
+    margin-left: -20px;
+  }
+  img {
+    margin-left: 30px;
+    width: 22%;
+    @include max(425px) {
+      margin-left: 7px;
+      width: 38%;
+      height: 33px;
+    }
+  }
+  .nav_video {
+    color: $fc;
+  }
+  .head_logo {
+    img {
+      width: 55%;
+      @include max(320px) {
+        width: 43%;
+      }
+    }
+  }
+  .navbar_brand {
+    margin-right: 0rem;
+
+    @include max(320px) {
+      margin-right: -4rem;
+    }
+  }
+  .navbar_toggler {
+    @include max(320px) {
+      font-size: -0.75rem !important;
+    }
+  }
+
+  .change_navColor {
+    box-shadow: 2px 5px 12px -4px rgba(0, 0, 0, 0.5);
+  }
+  .nav_right {
+    align-items: center;
+  }
+}
+.box_hero {
+  width: 44%;
+  padding: 13px;
+  border: 1px solid #cfd0cf;
+  font-size: 18px;
+  text-align: center;
+  @include max(1024px) {
+    width: 50%;
+  }
+  @include max(991px) {
+    width: 67%;
+  }
+  @include max(767px) {
+    width: 85%;
+  }
+  @include max(425px) {
+    width: 102%;
+  }
+}
+.page_spacing {
+  padding-top: 22%;
+  @include max(767px) {
+    padding-top: 40%;
+  }
+}
+// home section ends here
+
+//about us sectiom
+.welcome {
+  margin-bottom: 130px;
+  p {
+    color: $fwel;
+    font-family: $pr;
+  }
+}
+.welcome_content {
+  margin-top: 17%;
+}
+.section_bg {
+  img {
+    height: 450px;
+    width: 85%;
+  }
+}
+//about us section ends here
+
+//gallery section
+.gallery {
+  background: url(../imgs/gallery_img_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-bottom: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    font-family: $pr;
+  }
+}
+.card_gallery {
+  width: 50%;
+  float: right;
+  margin-top: 10%;
+  font-size: 16px;
+  background-color: $b;
+  @include max(1440px) {
+    width: 52%;
+    margin-top: 19%;
+    font-size: 16px;
+  }
+  @include max(1024px) {
+    margin-top: 11%;
+    width: 59%;
+  }
+  @include max(991px) {
+    margin-top: 16%;
+    width: 60%;
+    font-size: 12px;
+  }
+  @include max(767px) {
+    margin-top: 21%;
+    font-size: 8px;
+  }
+}
+.gallery_img {
+  background-color: $b;
+  color: $w;
+  height: 100%;
+  width: 100%;
+  padding: 55px;
+  @include max(575px) {
+    padding: 20%;
+  }
+  h2 {
+    margin-left: 35px;
+    font-size: 35px;
+    @include max(1440px) {
+      margin-left: 70px;
+      font-size: 26px;
+    }
+    @include max(1024px) {
+      margin-left: 30px;
+      font-size: 18px;
+    }
+    @include max(991px) {
+      margin-left: 34%;
+      margin-top: 10%;
+      font-size: 35px;
+    }
+    @include max(768px) {
+      margin-left: 24%;
+      margin-top: 5%;
+      font-size: 35px;
+    }
+    @include max(767px) {
+      margin-left: 78px;
+      margin-top: 19px;
+      font-size: 22px;
+    }
+
+    @include max(575px) {
+      margin-left: 40%;
+    }
+    @include max(425px) {
+      margin-left: 23%;
+      font-size: 34px;
+    }
+    @include max(375px) {
+      margin-left: 28%;
+    }
+    @include max(320px) {
+      margin-left: 16%;
+    }
+  }
+}
+.pic_space {
+  img {
+    margin-left: 5px;
+    @include max(425px) {
+      margin-left: 0;
+    }
+  }
+}
+.img_space {
+  img {
+    margin-left: 6px;
+    @include max(991px) {
+      margin-left: 0;
+    }
+  }
+}
+//gallery section ends here
+
+//pics section
+.pics {
+  margin-bottom: 130px;
+  img {
+    width: 97%;
+    height: 100%;
+    @include max(991px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    @include max(425px) {
+      width: 100%;
+    }
+  }
+}
+//pics section ends here
+
+//queries section
+.queries {
+  background: url(../imgs/Queries_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-bottom: 0;
+  @include max(767px) {
+    padding: 10px;
+  }
+  @include max(575px) {
+    padding: 3px;
+  }
+  @include max(425px) {
+    padding: 5px;
+  }
+  h2 {
+    font-family: $pb;
+    font-weight: 900;
+    @include max(425px) {
+      font-size: 15px;
+    }
+  }
+  p {
+    letter-spacing: 0;
+    @include max(575px) {
+      font-size: 12px;
+    }
+  }
+  article {
+    text-align: center;
+    padding: 40px;
+    @include max(991px) {
+      padding: 24px;
+    }
+    @include max(767px) {
+      padding: 1px;
+    }
+  }
+}
+.btn_msg {
+  border: none;
+  padding: 13px;
+  font-family: $pr;
+  @include max(767px) {
+    padding: 9px;
+    font-size: 12px;
+  }
+  @include max(767px) {
+    padding: 5px;
+    font-size: 14px;
+  }
+  @include max(425px) {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+.form-control {
+  background-color: black;
+  opacity: 0.8;
+  border: none;
+  color: $lg !important;
+  @include max(425px) {
+    padding: 0;
+    line-height: 1;
+  }
+}
+.text_field {
+  margin-top: -30px;
+}
+.input_field {
+  @include max(575px) {
+    margin-top: -12px;
+  }
+}
+.input_field {
+  width: 108%;
+  @include max(767px) {
+    width: 118%;
+  }
+  @include max(575px) {
+    width: 100%;
+  }
+  @include max(375px) {
+    width: 100%;
+  }
+}
+//queries section ends here
+
+//contact us section
+footer {
+  padding: 54px;
+  p {
+    color: $g;
+    font-family: $pm;
+  }
+  li {
+    margin-right: 16px;
+  }
+  .top_page {
+    a {
+      color: black;
+      float: right;
+      transform: rotate(-90deg);
+      font-family: $pl;
+      font-size: 12px;
+    }
+  }
+}
+//contact us section ends here

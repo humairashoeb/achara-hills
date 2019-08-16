@@ -208,15 +208,25 @@ body {
 .card_gallery {
   width: 50%;
   float: right;
-  margin-top: 10%;
+  margin-top: 50%;
   font-size: 16px;
   background-color: $b;
+  @include max(1366px) {
+    width: 57%;
+    margin-top: 8%;
+    font-size: 12px;
+  }
   @include max(1440px) {
     width: 52%;
     margin-top: 19%;
     font-size: 16px;
   }
-  @include max(1024px) {
+  @include max(1400px) {
+    margin-top: 11%;
+    width: 44%;
+    font-size: 12px;
+  }
+  @include max(1020px) {
     margin-top: 11%;
     width: 59%;
   }

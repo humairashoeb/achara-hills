@@ -828,9 +828,17 @@ body {
 .card_gallery {
   width: 50%;
   float: right;
-  margin-top: 10%;
+  margin-top: 50%;
   font-size: 16px;
   background-color: #111111;
+}
+
+@media screen and (max-width: 1366px) {
+  .card_gallery {
+    width: 57%;
+    margin-top: 8%;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -841,7 +849,15 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
+  .card_gallery {
+    margin-top: 11%;
+    width: 44%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
   .card_gallery {
     margin-top: 11%;
     width: 59%;
